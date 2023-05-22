@@ -4,6 +4,21 @@ document.getElementById('translate-button').addEventListener('click', function()
   translateContent(selectedLanguage);
 });
 
+function aumentarFonte() {
+  var conteudo = document.getElementById("conteudo");
+  var fontSize = window.getComputedStyle(conteudo, null).getPropertyValue('font-size');
+  var currentSize = parseFloat(fontSize);
+  conteudo.style.fontSize = (currentSize + 2) + 'px';
+}
+
+function diminuirFonte() {
+  var conteudo = document.getElementById("conteudo");
+  var fontSize = window.getComputedStyle(conteudo, null).getPropertyValue('font-size');
+  var currentSize = parseFloat(fontSize);
+  conteudo.style.fontSize = (currentSize - 2) + 'px';
+}
+
+
 function translateContent(language) {
   var translations = {
     en: {

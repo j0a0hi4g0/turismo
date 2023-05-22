@@ -8,9 +8,22 @@
 </head>
 <body>
   
+  <div id="conteudo">
     
+
+  <div class=".botao-grande">
+    <button onclick="aumentarFonte()">A</button>
+</div>
+
+  <div class=".botao-pequeno">
+    <button onclick="diminuirFonte()">a</button >
+</div>
+
+
+
     <header>
         <h1>Guia Turístico Brasileiro</h1>
+      
     </header>
   
       &nbsp;
@@ -29,9 +42,12 @@
           <option value="en">Inglês</option>
           <option value="pt">Português</option>
         </select>
+        <div class="gtranslate_wrapper"></div>
         
         <button id="translate-button">Traduzir</button>
       </div>
+
+      
 
     <div class="titulo">
         
@@ -88,7 +104,23 @@
   </div>
 </main>
 
-
+</div>
   <script src="java/java.js"></script>
+
+
+
+
+
+
+<div class="gtranslate_wrapper"></div>
+<script>window.gtranslateSettings = {"default_language":"pt","languages":["pt","en"],"wrapper_selector":".gtranslate_wrapper","alt_flags":{"en":"usa","pt":"brazil"}}</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/dwf.js" defer></script>
+
+
+
+
+
+
+
 </body>
 </html>

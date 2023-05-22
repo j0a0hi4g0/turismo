@@ -3,6 +3,23 @@
   margin-bottom: 20px;
 }
 
+
+/* Estilo para o botão "A" */
+.botao-grande {
+    font-size: 48px;
+    background-color: #2196F3;
+    color: #FFF;
+}
+
+/* Estilo para o botão "a" */
+.botao-pequeno {
+    font-size: 12px;
+    background-color: #FF5722;
+    color: #FFF;
+}
+
+
+
 #content {
   margin-bottom: 30px;
 }
